@@ -1,14 +1,17 @@
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
-num3 = float(input("Enter the third number: "))
+nimport streamlit as st
 
-# compare the numbers to find the largest
-if num1 >= num2 and num1 >= num3:
-    largest = num1
-elif num2 >= num1 and num2 >= num3:
-    largest = num2
+a = st.number_input("Please enter the first number : "f)
+
+b = st.number_input("Please enter the second number : ")
+
+c = st.number_input("Please enter the third number : ")
+
+if(a>b and a>c):
+	s = a
+elif(b>c and b>a):
+	s = b
 else:
-    largest = num3
+	s = c
 
-# print the largest number
-print("The largest number is", largest)
+if st.button("Find the largest number !"):
+	st.write(f"The largest number is {s}")
