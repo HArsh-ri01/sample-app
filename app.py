@@ -1,4 +1,4 @@
-nimport streamlit as st
+import streamlit as st
 
 a = st.number_input("Please enter the first number : "f)
 
